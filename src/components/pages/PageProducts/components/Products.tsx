@@ -46,8 +46,8 @@ export default function Products() {
           <Card className={classes.card}>
             <CardMedia
               className={classes.cardMedia}
-              image={product.image}
-              title="Image title"
+              image="https://source.unsplash.com/600x400/?car"
+              title={product.title}
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
@@ -55,6 +55,9 @@ export default function Products() {
               </Typography>
               <Typography>
                 {formatAsPrice(product.price)}
+              </Typography>
+              <Typography>
+                *Count: {product.count}
               </Typography>
             </CardContent>
             <CardActions>
